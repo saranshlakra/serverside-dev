@@ -14,9 +14,9 @@ router.get('/api/waldom/:partNumber', async (req, res) => {
     try {
         const { partNumber } = req.params;
         const response = await axios.get(`https://www.waldom.com/api/v1/7294de28-6ee1-40f1-ad36-36123982199c/ProductSearch/${partNumber}/0/1/1`, {
-            headers: {
-                'Authorization': `Bearer ${process.env.WALDOM_API_KEY}`
-            }
+            // headers: {
+            //     'Authorization': `Bearer ${process.env.WALDOM_API_KEY}`
+            // }
         });
         console.log(response.data)
         res.header("Access-Control-Allow-Origin", "*");

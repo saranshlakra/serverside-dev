@@ -1,2 +1,13 @@
 [build]
     functions = "functions"
+
+[[redirects]]
+    from = "/api/waldom/:partNumber"
+    to = "https://www.waldom.com/api/v1/:partNumber"
+    status = 200
+    force = true
+    headers = {X-From = "Netlify"}
+    [[headers]]
+    for = "/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"

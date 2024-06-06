@@ -2,7 +2,7 @@
     functions = "functions"
 
 [[redirects]]
-    from = "/api/waldom/:partNumber"
+    from = "http://localhost:3000"
     to = "https://www.waldom.com/api/v1/:partNumber"
     status = 200
     force = true
